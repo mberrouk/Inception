@@ -5,32 +5,35 @@ C1="\e[1;42m$(tput bold)"
 C2="\e[1;44m$(tput bold)"
 R="\e[0;0m"
 
-echo -e "${C}  STOP ALL CONTAIANERS  ${R}"
-if [ $(docker ps -aq | wc -l) != 0 ]; then
-docker stop $(docker ps -aq)
+
+if [ $(ls | grep "docker-compose.yma*l") ]; then
+	echo -e "${C}  COMPOSE DOWN  ${R}"
+	docker compose down
 fi
 
-echo -e "${C}  COMPOSE DOWN  ${R}"
-docker compose down
+echo -e "${C}  STOP ALL CONTAIANERS  ${R}"
+if [ $(docker ps -aq | wc -l) != 0 ]; then
+	docker stop $(docker ps -aq)
+fi
 
 echo -e "${C}  REMOVE CONTAINERS  ${R}"
 if [ $(docker ps -aq | wc -l) != 0 ]; then
-docker rm $(docker ps -aq)
+	docker rm $(docker ps -aq)
 fi
 
 echo -e "${C}  REMOVE ALL IMAGES  ${R}"
 if [ $(docker image ls -aq | wc -l) != 0 ]; then
-docker image rm -f $(docker image ls -aq)
+	docker image rm -f $(docker image ls -aq)
 fi
 
 echo -e "${C}  REMOVE ALL VOLUMES  ${R}"
 if [ $(docker volume ls -q | wc -l) != 0 ]; then
-docker volume rm -f $(docker volume ls -q) 
+	docker volume rm -f $(docker volume ls -q) 
 fi
 
 echo -e "${C}  REMOVE ALL NETWORKS  ${R}"
 if [ $(docker network ls -q | wc -l) != 3 ]; then
-docker network rm $(docker network ls -q)
+	docker network rm $(docker network ls -q)
 fi
 
 echo -e "${C}  REMOVE BUILDER CACHE  ${R}"
