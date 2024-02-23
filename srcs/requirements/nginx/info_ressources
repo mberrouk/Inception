@@ -1,0 +1,16 @@
+
+
+
+
+
+
+# Certificate Signing Request (CSR):
+## What is a CSR?
+  - A certificate signing request (CSR) is an encoded file containing
+    information about your website, service, organization, and domain
+    name. This information is used by a certificate authority (CA) to
+    create an SSL/TLS certificate for your website to encrypt traffic
+    to your site. A certificate CSR also contains your public key and
+    signature, which helps to verify identity and secure
+    communications to your site.
+:
