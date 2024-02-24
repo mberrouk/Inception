@@ -2,17 +2,19 @@ FROM debian:bullseye
 
 RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y php7.4 php7.4-fpm php7.4-mysql \
-	mariadb-client wget unzip curl
+	mariadb-client curl
 
-WORKDIR /installations
-RUN wget https://wordpress.org/latest.zip
 RUN mkdir -p /var/www/html
-RUN unzip latest.zip -d /var/www/html && rm -rf latest.zip
-RUN chown -R root:root /var/www/
+RUN chown -R www-data:www-data /var/www/
 
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 RUN chmod +x wp-cli.phar
-RUN mv wp-cli.phar /usr/local/bin/wp
-RUN service php7.4-fpm start
+RUN mv wp-cli.phar /bin/wp
+RUN sed -i 's/^listen.=.*/listen\t= 0.0.0.0/' /etc/php/7.4/fpm/pool.d/www.conf
 
-CMD ["php-fpm7.4", "-F"]
+COPY ./tools/wp-setup.sh /
+RUN chmod gu+x /wp-setup.sh && \
+	/wp-setup.sh 
+
+#CMD ["/wp-setup.sh"]
+CMD ["tail", "-f"]
