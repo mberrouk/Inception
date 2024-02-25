@@ -26,6 +26,3 @@ simultaneously on a given host. Containers are lightweight and contain everythin
 to run the application, so you don't need to rely on what's installed on the host. You can
 share containers, and be sure that everyone need to run the app is gets the same
 environment.
-
-
-##
