@@ -6,9 +6,9 @@
 >The students will virtualise several Docker images by creating them in their own personal virtual machines.
 
 ## Concepts to discover:
-1- Understand Docker and Docker compose.
-2- Set up and configure NGINX.
-3- Set up, use, manage, and configure MariaDB.
-4- Set up and configure WordPress with PHP-FPM.
-5- Connect the containers using Docker networks.
-6- Understand Docker volumes.
+- Understand Docker and Docker compose.
+- Set up and configure NGINX.
+- Set up, use, manage, and configure MariaDB.
+- Set up and configure WordPress with PHP-FPM.
+- Connect the containers using Docker networks.
+- Understand Docker volumes.
