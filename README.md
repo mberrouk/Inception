@@ -1,5 +1,5 @@
 # Inception:
 
-    ## Summary: 
+## Summary: 
 
-        - This project is a System Administration related exercise.
+- This project is a System Administration related exercise.
