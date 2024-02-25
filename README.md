@@ -1,2 +1,3 @@
 # Inception:
-    This project aems to tasd  
+    ## Summary: 
+        - This project is a System Administration related exercise.
