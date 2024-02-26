@@ -87,5 +87,17 @@ groups](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.htm
     resources.
 ```
 
+> The key feature of namespaces is that they isolate processes from each other, the
+> namespaces wraps a global system resources in an abstraction that makes it appear to the
+> processes within the namespaces that they have their own isolated instance of the global
+> resource.
+
+
+###### In short:
+```
+Namespaces: limits what processes can see (and therefore use). 
+
+Cgroup: limits how much you can use; 
+```
 
 #### Containers VS Virtual machine:
