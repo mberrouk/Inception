@@ -51,9 +51,10 @@ container.
 #### Namespaces &  Cgroups:
 
 
-##### Cgroups:
-> A Cgropus is a collection of process that are bound to a set of limits or parameters defined via cgroup filesystem. [linux manual page](https://www.man7.org/linux/man-pages/man7/cgroups.7.html)
-
+##### Cgroup:
+> A Cgroup (control group) is a collection of process that are bound to a set of limits or parameters defined via cgroup filesystem. [linux manual page](https://www.man7.org/linux/man-pages/man7/cgroups.7.html)
+These collections/groups can be herarchical, meaning that each group inherits limits from
+its parent group.
     - Cgroups provides:
       - Resource limiting:
         Groups can be set to not exceed a configured memory limit, which also includes the
@@ -69,7 +70,8 @@ container.
       - Control:
           freezing groups of processes, their check pointing and restarting.
 
-Source: [wikipedia](https://en.wikipedia.org/wiki/Cgroups)
+Source: [wikipedia](https://en.wikipedia.org/wiki/Cgroup)
+For advanced reader [Control groups](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.html)
 
 
 
