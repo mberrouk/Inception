@@ -41,6 +41,7 @@ the dependent file system and binaries for their functioning. As result, contain
 lightweight as compared to virtual machines. 
 - So containers are only isolated groups of processes running on a single host, which
   fulfill four requirements to be acceptable as such:
+
 ..* Not negotiable: They have to run on a single host.Two computers cannot run a single
 container.
 ..* They are groups of processes.
