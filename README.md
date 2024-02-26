@@ -115,7 +115,7 @@ directory, port numbers, and so on. [more details](https://lwn.net/Articles/2197
 Isolate processes from [SysV](https://en.wikipedia.org/wiki/UNIX_System_V) style
 inter-process communication - [sysvipc](https://man7.org/linux/man-pages/man7/svipc.7.html) -
 
-Control group (cgroup) Namespace:
+- Control group (cgroup) Namespace:
 Control group (cgroup) namespaces are a feature in operating systems that provide a way to organize and manage system resources. With cgroup namespaces, processes within a namespace can be grouped together and have their own independent set of resource limits and controls. This allows for better resource isolation and allocation, ensuring that one group of processes does not impact the performance or stability of other groups.
 
 - Time Namespace:
