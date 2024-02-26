@@ -31,8 +31,20 @@ environment.
 
 #### Containers: 
 
-containers is a standard unit of software that packages up code and all its
+Containers is a standard unit of software that packages up code and all its
 dependencies. Multiple containers can run on the same machine and share the OS kernel with
 other containers, each running as isolated processes in user space.
+Linux Container was the first implementation of containerization technology. It leveraged
+the linux cgroups and namespace isolation to create light-weight containers. Containers
+don't require the installation of a separate guest operating system. Containers only need
+the dependent file system and binaries for their functioning. As result, containers are
+lightweight as compared to virtual machines. 
+- So containers are only isolated groups of processes running on a single host, which
+  fulfill four requirements to be acceptable as such:
+  ..* Not negotiable: They have to run on a single host.Two computers cannot run a single
+  container.
+  ..* They are groups of processes.
+  ..* They need be isolated.
+  ..* They have to fulfill common features.
 
-### Containers VS Virtual machine
+### Containers VS Virtual machine:
