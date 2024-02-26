@@ -48,4 +48,8 @@ container.
 - They need be isolated.
 - They have to fulfill common features.
 
-### Containers VS Virtual machine:
+#### Namespaces &  Cgroups:
+- Cgroups:
+> A Cgropus is a collection of process that are bound to a set of limits or parameters defined via cgroup filesystem. --< linux manual page >--
+
+#### Containers VS Virtual machine:
