@@ -70,9 +70,10 @@ its parent group.
       - Control:
           freezing groups of processes, their check pointing and restarting.
 
-Source: [wikipedia](https://en.wikipedia.org/wiki/Cgroup)
-For advanced reader [Control groups](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.html)
+Source: [wikipedia](https://en.wikipedia.org/wiki/Cgroup).
 
+For advanced reader [Control
+groups](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.html).
 
 
 #### Containers VS Virtual machine:
