@@ -115,6 +115,17 @@ directory, port numbers, and so on. [more details](https://lwn.net/Articles/2197
 Isolate processes from [SysV](https://en.wikipedia.org/wiki/UNIX_System_V) style
 inter-process communication - [sysvipc](https://man7.org/linux/man-pages/man7/svipc.7.html) -
 
+Control group (cgroup) Namespace:
+Control group (cgroup) namespaces are a feature in operating systems that provide a way to organize and manage system resources. With cgroup namespaces, processes within a namespace can be grouped together and have their own independent set of resource limits and controls. This allows for better resource isolation and allocation, ensuring that one group of processes does not impact the performance or stability of other groups.
+
+- Time Namespace:
+Time namespaces are a feature introduced in 2018 and implemented in 2020 in some operating systems. They provide a way to isolate time-related information within a namespace. Each time namespace has its own perception of time, including the system clock, timers, and timers created by processes. This allows processes within a time namespace to have their own unique time references, independent of other namespaces. Time namespaces can be useful for testing, debugging, and creating time-sensitive applications.
+
+- Proposed Namespaces:
+Proposed namespaces refer to additional namespace concepts that have been suggested or proposed for implementation in operating systems. These namespaces may not be fully developed or integrated into operating systems yet, but they represent potential future additions to enhance isolation and control in various aspects of system resources.
+
+- Syslog Namespace:
+The syslog namespace is a specific type of namespace proposed in 2020. It aims to provide a way to isolate system logging information within a namespace. By creating a syslog namespace, processes within that namespace can have their own separate logging system, allowing for better organization, filtering, and control of log messages. This can be particularly useful in multi-tenant environments or situations where different applications or processes require independent logging mechanisms.
 
 ###### In short:
 ```
