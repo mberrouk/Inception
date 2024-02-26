@@ -31,4 +31,4 @@ environment.
 
 #### Containers: 
     containers is a standard unit of software that packages up code and all its
-dependencies 
+dependencies.
