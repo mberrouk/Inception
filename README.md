@@ -146,5 +146,7 @@ Cgroup: limits how much you can use.
 | ARG | Use build-time variables.|
 | CMD | Specify default commands|
 | COPY | Copy files and directories (from host).|
-| ENTRYPOINT | Specify the first to running process| 
-| ENV | Set environment variables| 
+| ENTRYPOINT | Specify the first to running process.| 
+| ENV | Set environment variables.| 
+| EXPOSE | describe ports to listening on.|
+| FROM | Create a new build stage from a base image.|
