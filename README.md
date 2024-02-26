@@ -77,5 +77,15 @@ Source: [wikipedia](https://en.wikipedia.org/wiki/Cgroup).
 For advanced reader [Control
 groups](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.html).
 
+#### Namespaces:
+
+##### Definition from Wikipedia:
+```
+    Namespaces are a feature of the linux kernel that partitions kernel resources such
+    that one set of processes sees one set of resources such that one set of processes
+    sees one set of resources while another set of processes sees a different set of
+    resources.
+```
+
 
 #### Containers VS Virtual machine:
