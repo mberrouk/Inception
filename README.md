@@ -59,6 +59,14 @@ container.
         Groups can be set to not exceed a configured memory limit, which also includes the
         file system cache, I/O bandwidth limit, CPU quota limit, CPU set limit, or maximum
         open files.
+      - Prioritization:
+      Some groups may get a larger share of CPU utilization or disk I/O throughput.
+      - Accounting:
+      measures a group's resource usage.
+      - Control:
+      freezing groups of processes, their check pointing and restarting.
+
+      Source: [wikipedia](https://en.wikipedia.org/wiki/Cgroups)
 
 
 
