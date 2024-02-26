@@ -39,13 +39,13 @@ the linux cgroups and namespace isolation to create light-weight containers. Con
 don't require the installation of a separate guest operating system. Containers only need
 the dependent file system and binaries for their functioning. As result, containers are
 lightweight as compared to virtual machines. 
-- So containers are only isolated groups of processes running on a single host, which
+> So containers are only isolated groups of processes running on a single host, which
   fulfill four requirements to be acceptable as such:
 
-..* Not negotiable: They have to run on a single host.Two computers cannot run a single
+- Not negotiable: They have to run on a single host.Two computers cannot run a single
 container.
-..* They are groups of processes.
-..* They need be isolated.
-..* They have to fulfill common features.
+- They are groups of processes.
+- They need be isolated.
+- They have to fulfill common features.
 
 ### Containers VS Virtual machine:
