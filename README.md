@@ -17,7 +17,7 @@ own personal virtual machines.
 - Connect the containers using Docker networks.
 - Understand Docker volumes.
 
-### Understand Docker:
+## Understand Docker:
 
 #### Intro:
 > Docker is an open-source platform that allows you to automate the deployment,
