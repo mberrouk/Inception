@@ -52,4 +52,11 @@ container.
 - Cgroups:
 > A Cgropus is a collection of process that are bound to a set of limits or parameters defined via cgroup filesystem. --< linux manual page >--
 
+Cgroups provides:
+
+- Resource limiting:
+
+    ...* groups can be set to not exceed a configured memory limit, which also includes the file system cache, I/O bandwidth limit, CPU quota limit, CPU set limit, or maximum open files.
+
+
 #### Containers VS Virtual machine:
