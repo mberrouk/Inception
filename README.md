@@ -95,16 +95,16 @@ groups](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cgroups.htm
 ##### Namespace Kinds:
 
 - Mount (mnt):
-Isolate the set of filesystem mount points seen by a group of processes. [more details] (https://lwn.net/Articles/531114/).
+Isolate the set of filesystem mount points seen by a group of processes. [more details](https://lwn.net/Articles/531114/).
 
 - Utsname :
 Allow a single system to appear to have different host and domain names to different
-processes (Using the sethostname() and setdomainname() system calls). [more details] (https://lwn.net/Articles/179345/).
+processes (Using the sethostname() and setdomainname() system calls). [more details](https://lwn.net/Articles/179345/).
 
 - PID:
 Provides processes with an independent set of process IDs (PIDs) from other namespaces.
 PID namespaces are nested, meaning when a new process is created it will have a PID each
-namespace from its current namespace up to the initial PID namespace. [more details] (https://lwn.net/Articles/259217/).
+namespace from its current namespace up to the initial PID namespace. [more details](https://lwn.net/Articles/259217/).
 ###### In short:
 ```
 Namespaces: limits what processes can see (and therefore use). 
