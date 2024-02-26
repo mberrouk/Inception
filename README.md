@@ -152,4 +152,4 @@ Cgroup: limits how much you can use.
 | FROM | Create a new build stage from a base image.|
 | RUN | Execute build commands.|
 | USER | Set user and group ID.|
-| WORKDIR| Change working directory|
+| WORKDIR | Change working directory.|
