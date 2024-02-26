@@ -55,7 +55,9 @@ container.
 Cgroups provides:
 
 - Resource limiting:
-... Groups can be set to not exceed a configured memory limit, which also includes the file system cache, I/O bandwidth limit, CPU quota limit, CPU set limit, or maximum open files.
+
+...Groups can be set to not exceed a configured memory limit, which also includes the file system cache, I/O bandwidth limit, CPU quota limit, CPU set limit, or maximum open files.
+
 
 
 #### Containers VS Virtual machine:
