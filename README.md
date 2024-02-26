@@ -141,6 +141,7 @@ Cgroup: limits how much you can use.
 [source](https://docs.docker.com/reference/dockerfile/)
 
 | Instruction | Description |
+|-------------|:-----------:|
 | ADD | Add local or remote files and directories.|
 | ARG | Use build-time variables.|
 | CMD | Specify default commands|
