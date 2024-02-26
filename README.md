@@ -33,3 +33,5 @@ environment.
     containers is a standard unit of software that packages up code and all its
 dependencies. Multiple containers can run on the same machine and share the OS kernel with
 other containers, each running as isolated processes in user space.
+
+### Containers VS Virtual machine
