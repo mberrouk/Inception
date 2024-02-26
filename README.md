@@ -133,5 +133,17 @@ Namespaces: limits what processes can see (and therefore use).
 
 Cgroup: limits how much you can use. 
 ```
+### Dockerfile:
 
-#### Containers VS Virtual machine:
+> Docker can build images automatically by reading the instruction from a Dockerfile. The
+> Dockerfile supports the following instructions:
+
+[source](https://docs.docker.com/reference/dockerfile/)
+
+| Instruction | Description |
+| ADD | Add local or remote files and directories.|
+| ARG | Use build-time variables.|
+| CMD | Specify default commands|
+| COPY | Copy files and directories (from host).|
+| ENTRYPOINT | Specify the first to running process| 
+| ENV | Set environment variables| 
