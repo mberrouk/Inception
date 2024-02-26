@@ -150,3 +150,6 @@ Cgroup: limits how much you can use.
 | ENV | Set environment variables.| 
 | EXPOSE | describe ports to listening on.|
 | FROM | Create a new build stage from a base image.|
+| RUN | Execute build commands.|
+| USER | Set user and group ID.|
+| WORKDIR| Change working directory|
