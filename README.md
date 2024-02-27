@@ -236,5 +236,7 @@ dictionary:
 * Some YAML resources:
 
 [Yaml Tutorials](https://written.dev/yaml).
+
 [Introduction to Yaml PDF](https://sweetohm.net/pdf/introduction-yaml.en.pdf).
+
 [Tutorialspoint PDF](https://www.tutorialspoint.com/yaml/yaml_tutorial.pdf).
