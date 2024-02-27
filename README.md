@@ -133,7 +133,44 @@ Namespaces: limits what processes can see (and therefore use).
 
 Cgroup: limits how much you can use. 
 ```
-### Dockerfile:
+
+#### Docker Architecture:
+[source](https://docs.docker.com/get-started/overview/)
+
+> Docker uses a client-server architecture. The Docker client talks to the Docker daemon,
+> which does the heavy lifting of building, running, and distributing your Docker
+> containers. The Docker client and daemon can run on the same system, or you can connect
+> a Docker client to a remote Docker daemon. The Docker client and daemon communicate
+> using a REST API, over UNIX sockets or a network interface. Another Docker client is
+> Docker Compose, that lets you work with applications consisting of a set of containers.
+
+#### The Docker daemon:
+
+> The docker daemon (dockerd) listens for Docker API requests and manages Docker objects
+> such as images, containers, networks, and volumes. A daemon can also communicate with
+> other daemons to manage Docker services.
+
+#### The Docker client:
+
+> The Docker client (docker) is the primary way that many Docker users interact with
+> Docker. The Docker command uses the Docker API. The Docker client can communicate with
+> more than one daemon.
+
+#### The Docker Desktop:
+
+> Docker Desktop is an easy-to-install application that enables you to build and share
+> containerized applications and microservices. Docker Desktop includes the Docker daemon
+> (dockerd), the Docker client (docker), Docker Compose, Docker Content Trust, Kubernetes,
+> and Credential Helper.
+
+
+#### Docker registries:
+
+> A Docker registry stores Docker images. Docker Hub is public registry that anyone can
+> use, and Docker looks for images on Docker Hub by default. You can even run your own
+> private registry.
+
+#### Dockerfile:
 
 > Docker can build images automatically by reading the instruction from a Dockerfile. The
 > Dockerfile supports the following instructions:
