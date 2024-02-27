@@ -229,3 +229,12 @@ dictionary:
     arg: 3
     test: hello
 ```
+
+* Scalar: Which is arbitrary data (encoded in Unicode) such as strings, integers, data,
+  and so on.
+
+* Some YAML resources:
+
+[Yaml Tutorials](https://written.dev/yaml).
+[Introduction to Yaml PDF](https://sweetohm.net/pdf/introduction-yaml.en.pdf).
+[Tutorialspoint PDF](https://www.tutorialspoint.com/yaml/yaml_tutorial.pdf).
