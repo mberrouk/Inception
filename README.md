@@ -224,6 +224,8 @@ strings: ["hello", "world", "!"]
   Think of a Python dictionary or a variable assignment in Bash script.
 
 ```yaml
-arg: 3
-test: hello
+---
+dictionary:
+    arg: 3
+    test: hello
 ```
