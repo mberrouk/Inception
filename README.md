@@ -202,3 +202,14 @@ Cgroup: limits how much you can use.
 
 > YAML (Yet Another Markup language)is a data serialization language that allows you to store complex data in a compact
 > and readable format. [more details](https://www.educative.io/blog/yaml-tutorial)
+
+##### YAML data blocks:
+
+* Sequence: values listed in a specific order. A sequence starts with a dash and a space.
+```yaml
+---
+items:
+    - 1
+    - 2
+    - 3
+```
