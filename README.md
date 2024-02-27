@@ -170,6 +170,13 @@ Cgroup: limits how much you can use.
 > use, and Docker looks for images on Docker Hub by default. You can even run your own
 > private registry.
 
+#### Docker Compose:
+
+> Docker compose is a tool for defining and running multi-container applications. Compose
+> simplifies the control of your entire application stack, making it easy to manage
+> services, networks, and volumes in a single, comprehensible YAML configuration file. It
+> also has commands for managing the whole lifecycle of you application.[more details](https://docs.docker.com/compose/)
+
 #### Dockerfile:
 
 > Docker can build images automatically by reading the instruction from a Dockerfile. The
