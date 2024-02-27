@@ -213,3 +213,9 @@ items:
     - 2
     - 3
 ```
+> Or, you can put them on a single line:
+```yaml
+---
+itemes: [1, 2, 3, 4]
+strings: ["hello", "world", "!"]
+```
