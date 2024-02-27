@@ -219,3 +219,11 @@ items:
 itemes: [1, 2, 3, 4]
 strings: ["hello", "world", "!"]
 ```
+
+* Mapping: Key and value pairs. Each key must be unique, and the order doesn't matter.
+  Think of a Python dictionary or a variable assignment in Bash script.
+
+```yaml
+arg: 3
+test: hello
+```
