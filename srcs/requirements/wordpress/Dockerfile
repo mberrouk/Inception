@@ -5,7 +5,6 @@ RUN apt-get install -y php7.4 php7.4-fpm php7.4-mysql php-phar \
 	mariadb-client curl php-mbstring php-xml php-tokenizer 
 
 RUN mkdir -p /var/www/html
-RUN chown -R www-data:www-data /var/www/
 
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 RUN chmod +x wp-cli.phar
@@ -17,4 +16,3 @@ COPY ./tools/wp-setup.sh /
 RUN chmod gu+x /wp-setup.sh
 
 CMD ["/wp-setup.sh"]
-#CMD ["tail", "-f"]

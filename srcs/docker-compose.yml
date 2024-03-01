@@ -3,43 +3,44 @@ version: "3"
 services:
   mariadb:
     container_name: mariadb
-    networks:
-      - inception
+    image: mariadb:mariadb
     build:
       args:
         DB_NAME: ${DB_NAME}
         DB_ROOT_PASSWD: ${DB_ROOT_PASSWD}
         DB_USER: ${DB_USER}
         DB_USER_PASSWD: ${DB_USER_PASSWD}
-      #      restart: unless-stopped
       context: requirements/mariadb
-    expose:
-      - "3306"
     volumes:
       - mariadb:/var/lib/mysql
+    networks:
+      - inception
+    restart: always
 
   nginx:
     depends_on:
       - wordpress
+    image: nginx:nginx
     container_name: nginx
-    networks:
-      - inception
     build:
-      #      restart: unless-stopped
       context: requirements/nginx
     ports:
       - "443:443"
     volumes:
       - wordpress:/var/www/html
+    networks:
+      - inception
+    restart: always
 
   wordpress:
     depends_on:
       - mariadb
+      - redis                   #BONUS
+    image: wordpress:wordpress
     container_name: wordpress
     networks:
       - inception
     build:
-      #  restart: unless-stopped
       context: requirements/wordpress
     expose:
       - "9000"
@@ -47,6 +48,17 @@ services:
       - wordpress:/var/www/html
     env_file:
       - .env
+    restart: always
+
+# BONUS
+  redis:
+    image: redis:redis
+    container_name: redis
+    build:
+      context: requirements/bonus/redis
+    networks:
+      - inception
+    restart: always
 
 networks:
   inception:
