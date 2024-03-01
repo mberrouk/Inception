@@ -1,7 +1,8 @@
 FROM debian:bullseye
-RUN apt update -y && apt upgrade -y \
-    && apt install -y nginx \
-    openssl
+
+RUN apt-get update -y && apt-get upgrade -y 
+RUN apt-get install -y nginx 
+RUN apt-get install -y openssl
 
 COPY tools/openssl.sh /
 RUN chmod gu+x openssl.sh && ./openssl.sh 
