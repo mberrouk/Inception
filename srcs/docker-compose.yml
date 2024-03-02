@@ -83,9 +83,20 @@ services:
   ftp:
     image: ftp:ftp
     container_name: ftp
+    depends_on:
+      - wordpress
     build:
-      context: requirements/bonus/ftp
+      args:
+        FTP_USER: ${FT_USER}
+        FTP_PASS: ${FT_PASS}
+      context: requirements/bonus/ftp-server
     ports:
+      - 1236:20
+    volumes:
+      - wordpress:/home/${FT_USER}/ftp
+    env_file:
+      - .env
+
 
 networks:
   inception:
