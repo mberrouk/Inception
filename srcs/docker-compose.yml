@@ -77,8 +77,15 @@ services:
     networks:
       - inception
     ports:
-      - 1235:8000
+      - 1235:80
     restart: always
+
+  ftp:
+    image: ftp:ftp
+    container_name: ftp
+    build:
+      context: requirements/bonus/ftp
+    ports:
 
 networks:
   inception:
